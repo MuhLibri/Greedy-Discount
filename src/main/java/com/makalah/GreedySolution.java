@@ -21,7 +21,7 @@ public class GreedySolution {
         }
         stringSolution.append("\nJumlah barang = " + itemCombination.size());
         stringSolution.append("\nDiskon = " + discount);
-        stringSolution.append("\nHarga Akhir = " + finalPrice);
+        stringSolution.append("\nHarga akhir = " + finalPrice);
         return stringSolution.toString();
     }
 }
