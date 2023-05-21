@@ -83,12 +83,12 @@ public class GreedyDiscount {
             solution.add(itemList.get(i));
             i++;
         }
-
+        int price = calculatedPrice.stream().mapToInt(Integer::intValue).sum();
         if (currentDiscount == 0) {
             return "Tidak ada kombinasi barang \nyang memenuhi harga minimal diskon";
         }
         else {
-            return new GreedySolution(solution, currentDiscount).toString();
+            return new GreedySolution(solution, currentDiscount, price).toString();
         }
     }
 }
