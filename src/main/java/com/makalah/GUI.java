@@ -6,12 +6,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class GUI extends JFrame implements ActionListener {
-    private JPanel subPanel1;
-    private JTextArea itemText;
-    private JTextArea solutionText;
-    private JButton saveButton;
-    private JButton searchButton;
-    private GreedyDiscount solver = new GreedyDiscount();
+    private final JTextArea itemText;
+    private final JTextArea solutionText;
+    private final JButton saveButton;
+    private final JButton searchButton;
+    private final GreedyDiscount solver = new GreedyDiscount();
 
     public GUI() {
         // Icon
@@ -50,7 +49,7 @@ public class GUI extends JFrame implements ActionListener {
         scroll1.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         scroll1.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         // Sub-panel 1
-        subPanel1 = new JPanel();
+        JPanel subPanel1 = new JPanel();
         subPanel1.setPreferredSize(new Dimension(300,500));
         subPanel1.setLayout(new BorderLayout());
         subPanel1.add(scroll1);
