@@ -51,7 +51,7 @@ public class GreedyDiscount {
     public int discount(List<Integer> price) {
         final float discount = 60f/100;
         final int minimalAmount = 40000;
-        final int maxDiscount = 50000;
+        final int maxDiscount = 24000;
 
         int sumPrice = price.stream().mapToInt(Integer::intValue).sum();
         if (sumPrice >= minimalAmount) {
